@@ -391,8 +391,8 @@ color: gray;
 flex-direction: row-reverse;
 }
 .Cont-Info{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Infografia_Memoria_Universidad.png);
@@ -401,8 +401,8 @@ flex-direction: row-reverse;
     background-size: contain;
 }
 .Cont-Info2{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Infografia_Productividad_Trabajo.png);
@@ -411,8 +411,8 @@ flex-direction: row-reverse;
     background-size: contain;
 }
 .Cont-Info3{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Salud\ Física.png);
@@ -421,8 +421,8 @@ flex-direction: row-reverse;
     background-size: contain;
 }
 .Cont-Info4{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Cafe_Mesa.png);
@@ -431,8 +431,8 @@ flex-direction: row-reverse;
     background-size: contain;
 }
 .Cont-Info5{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Infografia_Metabolismo_Hogar.png);
@@ -441,8 +441,8 @@ flex-direction: row-reverse;
     background-size: contain;
 }
 .Cont-Info6{
-    width: 80%;
-    height: 2200px;
+    width: 100%;
+    height: 1200px;
     text-align: center;
     margin: 0 auto;
     background-image: url(../Img/Pantallas_Mesa.png);
@@ -508,6 +508,63 @@ flex-direction: row-reverse;
 .slider-section{
     height: 400px;
 }
+.Consejo{
+    height: 50vh;
+    width: 100%;
+}
+.Cont-Section-Parallax{
+    display: block;
+}
+.Section-Parallax:nth-child(1){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(2){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(3){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(4){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(5){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Cont-Info{
+    height: 850px;
+
+}
+.Cont-Info2{
+    height: 850px;
+}
+.Cont-Info3{
+    height: 850px;
+}
+.Cont-Info4{
+    height: 850px;
+}
+.Cont-Info5{
+    height: 850px;
+}
+.Cont-Info6{
+    height: 850px;
+}
+
  
 }
 @media(max-width: 1024px){
@@ -539,6 +596,40 @@ flex-direction: row-reverse;
     .ContText{
         width: 85%;
     }
+    .Consejo{
+        padding: 0.7rem;
+    }
+    .Section-Parallax:nth-child(1){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(2){
+   
+  
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(3){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(4){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(5){
+   
+  
+   background-size: 80%;
+   
+}
+    
 }
 
 
