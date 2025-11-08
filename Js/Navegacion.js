@@ -12,8 +12,8 @@ menuBtn.addEventListener("click", () => {
         menuBtn.setAttribute("aria-expanded", "false");
     }
 });
-links.forEach(link =>{
-    link.addEventListener("click",()=>{
+links.forEach(links =>{
+    links.addEventListener("click",()=>{
         navLinks.classList.remove("active");
         menuBtn.innerHTML ="☰";
          menuBtn.setAttribute("aria-expanded", "false");
