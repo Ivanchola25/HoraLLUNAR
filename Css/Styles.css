@@ -686,6 +686,32 @@ flex-direction: row-reverse;
 .btn-left-Home{
     left: 0;
 }
+.Cont-Info{
+    height: 550px;
+
+}
+.Cont-Info2{
+    height: 550px;
+}
+.Cont-Info3{
+    height: 550px;
+}
+.Cont-Info4{
+    height: 550px;
+}
+.Cont-Info5{
+    height: 550px;
+}
+.Cont-Info6{
+    height: 550px;
+}
+.Cont-Info7{
+    height: 550px;
+}
+.btn-left-Home2{
+    top: 18.5%;
+    left: -3%;
+}
     
 }
 
