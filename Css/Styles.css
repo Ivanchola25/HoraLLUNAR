@@ -215,7 +215,7 @@ color: white;
 
 .Conocelas:hover{
  
-    transform: translate(5px);
+    transform: translateY(-5px);
     transition: all 0.8s ease;
     
 }
