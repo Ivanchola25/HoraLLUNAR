@@ -54,7 +54,7 @@ nav{
     font-weight: 500;
     transition: all 0.2s;
 }
-.nav-links a :hover{
+.nav-links  a :hover{
     opacity: 0.8;
     transform: translateY(-2px); 
 }
@@ -69,7 +69,7 @@ nav{
 
 .container-Slider{
     width: 100%;
-    height: 600px;
+    height: 670px;
     overflow: hidden;
     padding: 4rem 8rem 1rem;
 }
@@ -202,7 +202,7 @@ color: #FFCE00;
 
 .Conocelas{
     background-color: #FFCE00;
-    width: 180px;
+    width: 20%px;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -210,11 +210,11 @@ color: #FFCE00;
 }
 .Conocelas a{
 text-decoration: none;
-color: gray;
+color: white;
 }
 
 .Conocelas:hover{
-    color: white;   
+ 
     transform: translate(5px);
     transition: all 0.8s ease;
     
@@ -232,6 +232,7 @@ color: gray;
     font-size: 1.5rem;
 }
 .texto{
+    margin-top: 0.8rem;
  font-weight: bold;
     color: gray;
     font-size: 1rem;
@@ -286,9 +287,9 @@ color: gray;
 }
 
 .modal label {
-  position: absolute;
-  top: 37px;
-  right: 115px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
   color: #FFCE00;
   font-size: 30px;
   cursor: pointer;
@@ -464,6 +465,8 @@ flex-direction: row-reverse;
  .nav-links{
     position: fixed;
     top: 60px;
+    flex-direction: column;
+   align-items: center;
     left: 0;
     width: 100%;
     background-color:#070d23;
@@ -473,14 +476,15 @@ flex-direction: row-reverse;
  .nav-links.active{
     clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    padding: 1.5rem;
  }
  .nav-links li{
-    opacity: 0;
+   
     transform: translate(20px);
     transition: all 0.3s ease;
  }
- .nav-links.active li{
-    opacity: 1;
+ .nav-links.active li:hover{
+    
     transform: translate(0);
  }
  .nav-links li:nth-child(1){
