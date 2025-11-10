@@ -1,0 +1,730 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url(../Fonts/Italiana-Regular.ttf);
+html{
+    background-color: #091131;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.Video video{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    background-color: #070d23;
+    padding: 1rem 2rem ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.logo{
+    color: #FFCE00;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30px;
+    margin-left: 0.5rem;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    transition:all 0.3 ease;
+
+}
+.nav-links a{
+    color: #FFCE00;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.nav-links  a :hover{
+    opacity: 0.8;
+    transform: translateY(-2px); 
+}
+.menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-Slider{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    padding: 4rem 8rem 1rem;
+}
+.container{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 4rem 8rem 1rem;
+
+}
+.Section-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.section-Container{
+    margin-left: 0.3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    
+}
+.section-Container img{
+    
+    width: 80%;  
+}
+.section-Container img:hover{
+    cursor: pointer;
+    transition: 1s all ease;
+    transform: translateY(-5px);
+}
+.Header-Container{
+    text-align: center;
+
+}
+.Header-Container img{
+    width: 30%;
+    height: 300px;
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-section img {
+    width: 70%;
+    height: 85%;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+.btn-left-Home{
+
+    position: absolute;
+    top: 20%;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transform: translate(0,-50%);
+    transition: .5s ease;
+   
+}
+.btn-left-Home2 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transform: translate(0,-50%);
+    transition: .5s ease;
+}
+.btn-left-Home2 a{
+text-decoration: none;
+color: #FFCE00;
+}
+
+
+.btn-left:hover,
+.btn-right:hover,
+.btn-left-Home,
+.btn-left-Home2:hover{
+    background-color: #333333d4;
+    color: #fff;
+}   
+
+.btn-left {
+    left: 350px;
+}
+
+.btn-right {
+    right: 350px;
+}
+.btn-left-Home{
+    left: 300px;
+}
+
+
+.Conocelas{
+    background-color: #FFCE00;
+    width: 20%px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.7rem;
+}
+.Conocelas a{
+text-decoration: none;
+color: white;
+}
+
+.Conocelas:hover{
+ 
+    transform: translateY(-5px);
+    transition: all 0.8s ease;
+    
+}
+    .ContText{
+        display: flex;
+        margin: 0 auto;
+        width: 50%;
+        flex-direction: column;
+    }
+
+.Titulo{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+.texto{
+    margin-top: 0.8rem;
+ font-weight: bold;
+    color: gray;
+    font-size: 1rem;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Mostrar la ventana modal cuando el checkbox está activado */
+#btn-modal:checked ~ .modal,
+#btn-modal2:checked ~ .modal,
+#btn-modal3:checked ~ .modal,
+#btn-modal4:checked ~ .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor {
+  width: 1200px;
+  height: 650px;
+  margin: auto;
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateY(-30%);
+;
+}
+.contenedor video{
+    width: 100%;
+}
+
+/* Animación de aparición */
+#btn-modal:checked ~ .modal .contenedor,
+#btn-modal2:checked ~ .modal .contenedor,
+#btn-modal3:checked ~ .modal .contenedor,
+#btn-modal4:checked ~ .modal .contenedor {
+  transform: translateY(0%);
+}
+
+.modal label {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  color: #FFCE00;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#btn-modal,
+#btn-modal2,
+#btn-modal3,
+#btn-modal4 {
+  display: none;
+}
+
+
+/* Responsive */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+.parallax{
+  
+    width: 100%;
+    height: 100vh;
+    
+
+}
+.Section-Parallax{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+.Cont-Section-Parallax{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Consejo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    color: #fff;
+    padding: 5rem;
+   
+}
+.Consejo h1{
+    color: #FFCE00;
+}
+.Consejo h5{
+    background-color: #FFCE00;
+    color: white;
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+.TextAnim{
+    transform: translateY(-130px);
+    opacity: 0;
+    transition: 1.5s ease;
+}
+.TextAnim--visible{
+   transform: translateY(0);
+   opacity: 1;
+}
+.Section-Parallax:nth-child(1){
+   
+   background-image: url(../Img/Casa-Conoce.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: 38%;
+}
+.Section-Parallax:nth-child(2){
+     background-color: #132257;
+     background-image: url(../Img/Universidad-Conoce.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 38%;
+}
+.Section-Parallax:nth-child(3){
+     background-color: #173292;
+     background-image: url(../Img/Trabajo-Conoce.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: 38%;
+}
+.Section-Parallax:nth-child(4){
+     background-color: #143bc8;
+     background-image: url(../Img/Sueño\ Cuerpo-Conoce.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 38%;
+}
+.Section-Parallax:nth-child(5){
+      background-color: #1550f3;
+    background-image: url(../Img/Sueño\ Mente-Conoce.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: 38%;
+}
+.Cont-Section-Parallax:nth-child(1){
+flex-direction: row-reverse;
+}
+.Cont-Info{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Infografia_Memoria_Universidad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info2{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Infografia_Productividad_Trabajo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info3{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Salud\ Física.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info4{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Cafe_Mesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info5{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Infografia_Metabolismo_Hogar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info6{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Pantallas_Mesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Cont-Info7{
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../Img/Sueno\ Mente-Conoce.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Options{
+
+        width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem
+}
+.Options li{
+    list-style: none;
+    background-color: #2146ad;
+    padding: 0.8rem;
+    border-radius: 8px;
+  
+}
+.Options li a{
+    text-decoration: none;
+    color: #fff;
+}
+.Options li:hover{
+   
+   transform: translateY(-10px);
+   transition: 0.8s all ease;
+}
+
+
+@media (max-width: 768px){
+    .container-Slider{
+    height: 600px;
+    padding: 2rem 0 0;
+ }
+ .menu-btn{
+    display: block;
+    color: #FFCE00;
+
+ }
+ .nav-links{
+    position: fixed;
+    top: 60px;
+    flex-direction: column;
+   align-items: center;
+    left: 0;
+    width: 100%;
+    background-color:#070d23;
+    clip-path: circle(0px at 90% -10%);
+    pointer-events: none;
+ }
+ .nav-links.active{
+    clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+    padding: 1.5rem;
+ }
+ .nav-links li{
+   
+    transform: translate(20px);
+    transition: all 0.3s ease;
+ }
+ .nav-links.active li:hover{
+    
+    transform: translate(0);
+ }
+ .nav-links li:nth-child(1){
+    transition-delay: 0.1s;
+ }
+  .nav-links li:nth-child(2){
+    transition-delay: 0.2s;
+ }
+  .nav-links li:nth-child(3){
+    transition-delay: 0.3s;
+ }
+ .slider-section img {
+    width: 80%;
+    height: 60%;
+}
+.texto{
+    margin-top: 0.5rem;
+}
+.btn-left{
+    left: 80px;
+}
+.btn-right{
+    right: 80px;
+}
+.slider-section{
+    height: 400px;
+}
+.Consejo{
+    height: 50vh;
+    width: 100%;
+}
+.Cont-Section-Parallax{
+    display: block;
+}
+.Section-Parallax:nth-child(1){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(2){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(3){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(4){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Section-Parallax:nth-child(5){
+   
+   background-position: bottom;
+   background-size: 50%;
+   
+}
+.Cont-Info{
+    height: 850px;
+
+}
+.Cont-Info2{
+    height: 850px;
+}
+.Cont-Info3{
+    height: 850px;
+}
+.Cont-Info4{
+    height: 850px;
+}
+.Cont-Info5{
+    height: 850px;
+}
+.Cont-Info6{
+    height: 850px;
+}
+.Cont-Info7{
+    height: 850px;
+}
+.Header-Container img{
+    width: 100%;
+}
+
+
+ 
+}
+@media(max-width: 1024px){
+    .btn-left{
+        left: 210px;
+    }
+    .btn-right{
+        right: 210px;
+    }
+    .slider-section img{
+        width: 100%;
+        height: 75%;
+    }
+    .btn-left-Home{
+    left: 80px;
+}
+.Header-Container img{
+    width: 80%;
+}
+}
+@media (max-width: 580px){
+    .slider-section{
+        height: 550px;
+    }
+    .slider-section img{
+        width: 130%;
+        
+    }
+    .btn-left{
+        left: 20px;
+    }
+    .btn-right{
+        right: 20px;
+    }
+    .ContText{
+        width: 85%;
+    }
+    .Consejo{
+        padding: 0.7rem;
+    }
+    .Section-Parallax:nth-child(1){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(2){
+   
+  
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(3){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(4){
+   
+   
+   background-size: 80%;
+   
+}
+.Section-Parallax:nth-child(5){
+   
+  
+   background-size: 80%;
+   
+}
+.container{
+    padding: 4rem 2rem 0rem;;
+}
+.btn-left-Home{
+    left: 0;
+}
+.Cont-Info{
+    height: 550px;
+
+}
+.Cont-Info2{
+    height: 550px;
+}
+.Cont-Info3{
+    height: 550px;
+}
+.Cont-Info4{
+    height: 550px;
+}
+.Cont-Info5{
+    height: 550px;
+}
+.Cont-Info6{
+    height: 550px;
+}
+.Cont-Info7{
+    height: 550px;
+}
+.btn-left-Home2{
+    top: 18.5%;
+    left: -3%;
+}
+.modal label{
+    right: 4px;
+}
+    
+}
+
+
+
