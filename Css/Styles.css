@@ -69,7 +69,7 @@ nav{
 
 .container-Slider{
     width: 100%;
-    height: 670px;
+    height: 650px;
     overflow: hidden;
     padding: 4rem 8rem 1rem;
 }
@@ -79,15 +79,12 @@ nav{
     height: 100%;
     overflow: hidden;
     padding: 4rem 8rem 1rem;
-  
+
 }
 .Section-Container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
-    
-    
+    justify-content: center;  
 }
 .section-Container{
     margin-left: 0.3rem;
@@ -96,10 +93,14 @@ nav{
     
 }
 .section-Container img{
-    width: 80%;
+    
+    width: 80%;  
 }
-
-
+.section-Container img:hover{
+    cursor: pointer;
+    transition: 1s all ease;
+    transform: translateY(-5px);
+}
 .Header-Container{
     text-align: center;
 
@@ -227,6 +228,7 @@ color: white;
     }
 
 .Titulo{
+    text-align: center;
     margin-top: 0.8rem;
     font-weight: bold;
     color: white;
