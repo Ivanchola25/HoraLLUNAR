@@ -493,11 +493,18 @@ flex-direction: row-reverse;
    transition: 0.8s all ease;
 }
 .Flecha{
-    width: 272px;
-    height: 240px;
+
+   
     position: fixed;
     top: 80px;
     left: 10px;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFCE00;
 }
 
 
@@ -664,6 +671,7 @@ flex-direction: row-reverse;
     }
     .Consejo{
         padding: 0.7rem;
+        align-items: center;
     }
     .Section-Parallax:nth-child(1){
    
@@ -731,8 +739,11 @@ flex-direction: row-reverse;
     right: 4px;
 }
 .Flecha{
-    top: 20px;
-    left: 0;
+    top: 45px;
+    left: 0 ;
+}
+.Consejo h5{
+    width: 100%;
 }
     
 }
